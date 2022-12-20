@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Devil Prajwal</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var sizeofset =parseInt(prompt("enter size of set"));
+		const mySet=new Set();
+		for(var x=1;x<=sizeofset;x++)
+		{
+			var element = parseInt(prompt("Enter element no."+x+":"));
+			mySet.add(element);
+
+		}
+		console.log(mySet);
+		{
+		
+		var dele = parseInt(prompt("Enter number to delete."+x+":"));
+		mySet.delete(dele);
+		}
+		console.log(mySet);
+		var search = parseInt(prompt("Enter search element"+x+":"));
+		if (mySet.has(search) == true)
+		 {
+		 	console.log("Element found");
+		 } 
+		 else 
+		 {
+		 	console.log("Element not found!");
+		 }
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greater and Smaller</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num1 = parseInt(prompt("Enter the first number:"));
+		var num2 = parseInt(prompt("Enter the second number:"));
+		if(num1>num2){
+			document.write("<h1>" + num1 + " is greater than " + num2 + "<br>");
+			if(num1 % 2 == 0){
+				document.write(num1 + " is even");
+			}
+			else{
+				document.write(num1 + " is odd");
+			}
+		}
+		else if(num1<num2){
+			document.write("<h1>" + num2 + " is greater than " + num1 + "<br>");
+			if(num2 % 2 == 0){
+				document.write(num2 + " is even");
+			}
+			else{
+				document.write(num2 + " is odd");
+			}
+		}
+		else{
+			document.write("<h1>" + num1 + " is equal to " + num2 + "<br>");
+			if(num2 % 2 == 0){
+				document.write(num2 + " is even");
+			}
+			else{
+				document.write(num2 + " is odd");
+			}
+		}
+	</script>
+</body>
+</html>

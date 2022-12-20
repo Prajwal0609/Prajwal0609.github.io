@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ARREY</title>
+</head>
+<body>
+	<div id="output" style="font-size: 50px;font-weight: bold;"></div>
+<script type="text/javascript">
+	var data =new Array();
+data[0] ="Welcome to javascriptWorld";
+data[1] ="My name is Devil Prajwal";
+data[2] ="I am from nagpur";
+data[3] ="Bye!Have A Nice Day";	
+var d =""
+var colors = new Array("red","green","violet","orange");
+for(var i=0;i<=3;i++)
+{
+	d += "<p style='color:"+colors[i]+"'>"+data[i]+ "</p>";
+}
+document.getElementById('output').innerHTML =d;
+</script>
+</body>
+</html>

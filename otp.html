@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<style type="text/css">
+		body
+		{
+			background: linear-gradient(to right, red, white);
+		}
+	</style>
+</head>
+<body>
+	<div align="center">
+		<br><br><br><br><br><br><br><br><br><br><br>
+		<h1> OTP GENERATOR</h1>
+		<input type="text" id="min" placeholder="Enter Minimum NO.">
+		<br><br>
+		<input type="text" id="max" placeholder="Enter Maximum NO.">
+		<br><br>
+		<input type="button" value="GENERAT" onclick="random_gen()">
+		<br><br>
+		<div id="output" class="output"></div>
+	</div>
+	<script type="text/javascript">
+		function random_gen()
+		{
+			var min =parseInt(document.getElementById('min').value);
+			var max =parseInt(document.getElementById('max').value);
+			var randomNo  =Math.floor(Math.random()*(max - min +1)) +min;
+			document.getElementById('output').innerHTML =randomNo
+		}
+	</script>
+</body>
+</html>
